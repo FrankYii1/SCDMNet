@@ -1,21 +1,11 @@
 # SCDMNet
 It is based on U2PL.It is a semi-supervised contrastive learning remote sensing semantic segmentation network with dual-attention and multi-level feature fusion.
-# Prepare DATA
-such as VOC
-data
-├── cityscapes
-│   ├── gtFine
-│   └── leftImg8bit
-├── splits
-│   ├── cityscapes
-│   └── pascal
-└── VOC2012
-    ├── Annotations
-    ├── ImageSets
-    ├── JPEGImages
-    ├── SegmentationClass
-    ├── SegmentationClassAug
-    └── SegmentationObject
+# Installation
+git clone https://github.com/Haochen-Wang409/U2PL.git && cd U2PL
+conda create -n u2pl python=3.6.9
+conda activate u2pl
+pip install -r requirements.txt
+pip install pip install torch==1.8.1+cu102 torchvision==0.9.1+cu102 -f https://download.pytorch.org/whl/torch_stable.html
 # Train
 cd experiments/pascal/1464/ours
 # use torch.distributed.launch
