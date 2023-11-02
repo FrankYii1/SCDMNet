@@ -8,7 +8,6 @@ pip install -r requirements.txt
 pip install pip install torch==1.8.1+cu102 torchvision==0.9.1+cu102 -f https://download.pytorch.org/whl/torch_stable.html
 # Train
 cd experiments/pascal/1464/ours
-# use torch.distributed.launch
 sh train.sh <num_gpu> <port>
 # After training, the model should be evaluated by
 sh eval.sh
